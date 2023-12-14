@@ -300,7 +300,7 @@ int main() {
             if (line[0] == 'F') {  // * Find and record row of query value
                 d->searchRecord(line.substr(2));
             }
-            // ! Imcomplete... can find 124.9 in myTable array
+            // ! Incomplete... can't find 124.9 in myTable array
             if (line[0] == 'V') {  // * Call searchValue method
                 string str = line.substr(2, line.length());
                 d->searchValue(str);
